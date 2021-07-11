@@ -1,0 +1,502 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-11T20:49:53.544Z",
+        "before": [
+          {
+            "output": [
+              "This will run before the Scenario"
+            ],
+            "result": {
+              "duration": 21990300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User Able To Login From Farnell Login Screen and Login Details Remembered When Check Remember me Box",
+        "description": "",
+        "id": "farnell-login-screen-feature;user-able-to-login-from-farnell-login-screen-and-login-details-remembered-when-check-remember-me-box",
+        "after": [
+          {
+            "output": [
+              "This will run after the Scenario"
+            ],
+            "result": {
+              "duration": 1546149500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027loginContainer\u0027]/div[2]/div[1]/h1\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-9AVCFKT\u0027, ip: \u0027192.168.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\pc\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:64601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b97982abce61abaf0e2a1694d6fef68c\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027loginContainer\u0027]/div[2]/div[1]/h1}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageObjects.LoginPage.getLogInHeader(LoginPage.java:26)\r\n\tat stepDefinition.StepDefinition.userIsOnFarnellLoginScreen(StepDefinition.java:39)\r\n\tat ✽.User is on Farnell Login Screen(file:///C:/Ddrive/CBS_CTS_Task/Learning/APPIUM/AppiumLearning/DemoProject/src/test/java/featureFiles/Login.feature:5)\r\n",
+              "duration": 45112403100,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User is on Farnell Login Screen",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsOnFarnellLoginScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User enter username \"Username@123456\" and password \"Password@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username@123456\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Password@12345\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.userEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User select Remember me checkbox",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userSelectRememberMeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click on Login button",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User is able to Login Succesfully",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsAbleToLoginSuccesfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Login details remembered on logout",
+            "match": {
+              "location": "stepDefinition.StepDefinition.loginDetailsRememberedOnLogout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:50:41.203Z",
+        "before": [
+          {
+            "output": [
+              "This will run before the Scenario"
+            ],
+            "result": {
+              "duration": 3992200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User Able To Login From Farnell Login Screen and Login Details Not Remembered When UnCheck Remember me Box",
+        "description": "",
+        "id": "farnell-login-screen-feature;user-able-to-login-from-farnell-login-screen-and-login-details-not-remembered-when-uncheck-remember-me-box",
+        "after": [
+          {
+            "output": [
+              "This will run after the Scenario"
+            ],
+            "result": {
+              "duration": 966443200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027loginContainer\u0027]/div[2]/div[1]/h1\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-9AVCFKT\u0027, ip: \u0027192.168.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\pc\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6036cfc338ea8f31969792216ad14edf\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027loginContainer\u0027]/div[2]/div[1]/h1}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageObjects.LoginPage.getLogInHeader(LoginPage.java:26)\r\n\tat stepDefinition.StepDefinition.userIsOnFarnellLoginScreen(StepDefinition.java:39)\r\n\tat ✽.User is on Farnell Login Screen(file:///C:/Ddrive/CBS_CTS_Task/Learning/APPIUM/AppiumLearning/DemoProject/src/test/java/featureFiles/Login.feature:15)\r\n",
+              "duration": 22543229000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User is on Farnell Login Screen",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsOnFarnellLoginScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enter username \"Username@123456\" and password \"Password@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username@123456\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Password@12345\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.userEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User Uncheck Remember me checkbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User click on Login button",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User is able to Login Succesfully",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsAbleToLoginSuccesfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Login details Not remembered on logout",
+            "match": {
+              "location": "stepDefinition.StepDefinition.loginDetailsNotRememberedOnLogout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest2"
+          }
+        ]
+      }
+    ],
+    "name": "Farnell Login Screen Feature",
+    "description": "",
+    "id": "farnell-login-screen-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-11T20:51:04.818Z",
+        "before": [
+          {
+            "output": [
+              "This will run before the Scenario"
+            ],
+            "result": {
+              "duration": 1999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "New User Able To Register From Farnell Register Screen and Login Details Remembered When Check Remember me Box",
+        "description": "",
+        "id": "farnell-register-screen-feature;new-user-able-to-register-from-farnell-register-screen-and-login-details-remembered-when-check-remember-me-box",
+        "after": [
+          {
+            "output": [
+              "This will run after the Scenario"
+            ],
+            "result": {
+              "duration": 785592500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027userRegistrationContainer\u0027]/div[2]/div/h1\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-9AVCFKT\u0027, ip: \u0027192.168.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\pc\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:49498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 20a25ab544dfe3cbe211151a8950fde3\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027userRegistrationContainer\u0027]/div[2]/div/h1}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageObjects.RegisterPage.getRegisterHeader(RegisterPage.java:28)\r\n\tat stepDefinition.StepDefinition.userIsOnFarnellRegisterScreen(StepDefinition.java:47)\r\n\tat ✽.User is on Farnell Register Screen(file:///C:/Ddrive/CBS_CTS_Task/Learning/APPIUM/AppiumLearning/DemoProject/src/test/java/featureFiles/Register.feature:5)\r\n",
+              "duration": 20825268700,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User is on Farnell Register Screen",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsOnFarnellRegisterScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User enter all the details Correctly",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userEnterAllTheDetailsCorrectly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User select Remember me checkbox",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userSelectRememberMeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click on Register button",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User is able to Register",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsAbleToRegister()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Login details remembered on logout",
+            "match": {
+              "location": "stepDefinition.StepDefinition.loginDetailsRememberedOnLogout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegisterTest1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:51:26.512Z",
+        "before": [
+          {
+            "output": [
+              "This will run before the Scenario"
+            ],
+            "result": {
+              "duration": 998900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "New User Able To Register From Farnell Register Screen and Login Details Not Remembered When UnCheck Remember me Box",
+        "description": "",
+        "id": "farnell-register-screen-feature;new-user-able-to-register-from-farnell-register-screen-and-login-details-not-remembered-when-uncheck-remember-me-box",
+        "after": [
+          {
+            "output": [
+              "This will run after the Scenario"
+            ],
+            "result": {
+              "duration": 1555107200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027userRegistrationContainer\u0027]/div[2]/div/h1\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-9AVCFKT\u0027, ip: \u0027192.168.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\pc\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:50763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fb5894bb1f625889d25122ddf3405a39\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027userRegistrationContainer\u0027]/div[2]/div/h1}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageObjects.RegisterPage.getRegisterHeader(RegisterPage.java:28)\r\n\tat stepDefinition.StepDefinition.userIsOnFarnellRegisterScreen(StepDefinition.java:47)\r\n\tat ✽.User is on Farnell Register Screen(file:///C:/Ddrive/CBS_CTS_Task/Learning/APPIUM/AppiumLearning/DemoProject/src/test/java/featureFiles/Register.feature:14)\r\n",
+              "duration": 20097105400,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User is on Farnell Register Screen",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsOnFarnellRegisterScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enter all the details Correctly",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userEnterAllTheDetailsCorrectly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User UnCheck Remember me checkbox",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userUncheckRememberMeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999500,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User click on Register button",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User is able to Register",
+            "match": {
+              "location": "stepDefinition.StepDefinition.userIsAbleToRegister()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Login details Not remembered on logout",
+            "match": {
+              "location": "stepDefinition.StepDefinition.loginDetailsNotRememberedOnLogout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegisterTest2"
+          }
+        ]
+      }
+    ],
+    "name": "Farnell Register Screen Feature",
+    "description": "",
+    "id": "farnell-register-screen-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/Register.feature",
+    "tags": []
+  }
+]
