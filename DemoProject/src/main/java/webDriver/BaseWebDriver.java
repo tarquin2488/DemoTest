@@ -15,13 +15,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseWebDriver {
 
-	public static WebDriver driver;
+	private static WebDriver driver =null;
 	public static Properties prop;
 	public static final String workingDir = System.getProperty("user.dir");
 	public static FileInputStream fis;
-
-	public static WebDriver getDriver() {
-
+	
+	// Constructor
+    private BaseWebDriver(){
 		prop = new Properties();
 		try {
 			fis = new FileInputStream(workingDir + "//src//main//java//webDriver//Global.properties");
@@ -69,9 +69,17 @@ public class BaseWebDriver {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
+    }
+    
+    
+    
+ // To get driver
+    public static WebDriver getDriver()
+    {
+        new BaseWebDriver();
+        return driver;
+    }
 
-		return driver;
-
-	}
+	
 
 }

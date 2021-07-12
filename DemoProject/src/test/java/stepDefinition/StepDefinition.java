@@ -24,7 +24,8 @@ import webDriver.CommonMethod;
 
 public class StepDefinition {
 
-	public WebDriver driver = BaseWebDriver.getDriver();
+	
+	WebDriver driver=Hooks.driver;
 	private HomePage hp = new HomePage(driver);
 	private LoginPage lp = new LoginPage(driver);
 	private RegisterPage rp = new RegisterPage(driver);
@@ -159,10 +160,10 @@ public class StepDefinition {
 		// Check whether input field is blank
 		if (textInsideUserNameTextBox.isEmpty()) {
 			System.out.println("Login details Not remembered on logout");
-			Assert.assertTrue(textInsideUserNameTextBox.isEmpty());
+			Assert.assertTrue("Validate Text Inside UserName Field",textInsideUserNameTextBox.isEmpty());
 		} else {
-			System.out.println("UserNameTextBox is Not Empty");
-			Assert.assertTrue(textInsideUserNameTextBox.isEmpty());
+			System.out.println("Login details remembered on logout");
+			Assert.assertTrue("Validate Text Inside UserName Field",textInsideUserNameTextBox.isEmpty());
 		}
 
 	}
